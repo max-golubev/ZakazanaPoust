@@ -21,14 +21,19 @@ class Player:
         return self.actions
 
     def change_x_plus(self):
-        return self.x += 1
+        self.x += 1
 
     def change_x_minus(self):
-        return self.x -= 1
+        self.x -= 1
 
     def change_y_plus(self):
-        return self.y += 1
+        self.y += 1
 
     def change_y_minus(self):
-        return self.y -= 1
+        self.y -= 1
+
+
+class WaterCarrier(Player):
+    def __init__(self, x, y, position: Tile.Tile, actions, starting_water_level):
+        super(WaterCarrier, self).__init__(x, y, position, actions, starting_water_level)
 
