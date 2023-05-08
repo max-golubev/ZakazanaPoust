@@ -16,7 +16,7 @@ def player_round(player:Player.Player):
 
 
         pohyb = input(f"Mas jeste {Player.Player.get_actions(Player)} kroku.")
-        pohyb.upper()
+        pohyb = pohyb.upper()
         if pohyb == 'W' or pohyb == 'A' or pohyb == 'S' or pohyb == 'D':
             if pohyb == 'W' and Player.Player.get_y(Player) > 0:
                 player.actions -= 1
